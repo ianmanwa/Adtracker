@@ -1,4 +1,4 @@
-const API = "https://adtracker-ax58.onrender.com";
+const API = "https://adtracker-ax58.onrender.com/ads";
 
 async function fetchAds() {
     const res = await fetch(API);
