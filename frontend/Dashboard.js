@@ -1,4 +1,4 @@
-const API = "http://localhost:3000/ads";
+const API = "https://adtracker-ax58.onrender.com";
 
 async function fetchAds() {
     const res = await fetch(API);
