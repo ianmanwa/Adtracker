@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ad Tracker</title>
+    <link rel="stylesheet" href="Dashboard.css">
+</head>
+<body>
+
+<div class="container">
+    <h2>Ad Sales Tracker</h2>
+
+    <div class="form">
+        <input type="text" id="link" placeholder="Ad Link">
+        <input type="text" id="product" placeholder="Product Name">
+        <button onclick="addRow()">Add Ad</button>
+    </div>
+
+    <div class="table-wrapper">
+        <table>
+            <thead>
+                <tr>
+                    <th>Ad</th>
+                    <th>Product</th>
+                    <th>Sales</th>
+                    <th>Status</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody id="tableBody"></tbody>
+        </table>
+    </div>
+</div>
+
+<script src="Dashboard.js"></script>
+</body>
+</html>

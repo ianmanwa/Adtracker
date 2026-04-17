@@ -1,0 +1,138 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f6f9;
+    margin: 0;
+}
+
+.container {
+    max-width: 900px;
+    margin: auto;
+    padding: 15px;
+}
+
+h2 {
+    text-align: center;
+}
+
+/* FORM */
+.form {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+    flex-wrap: wrap;
+}
+
+.form input {
+    flex: 1;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+.form button {
+    padding: 10px 15px;
+    border: none;
+    background: #3498db;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+/* TABLE */
+.table-wrapper {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+th, td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+    vertical-align: middle;
+}
+
+/* Center EVERYTHING except product name */
+th, td {
+    text-align: center;
+}
+
+/* Keep product column left-aligned for readability */
+td:nth-child(2),
+th:nth-child(2) {
+    text-align: left;
+}
+
+/* Make actions nicely spaced */
+td:last-child {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+
+/* Make link look clean */
+td a {
+    text-decoration: none;
+    color: #3498db;
+    font-weight: 500;
+}
+
+/* Optional: improve row spacing */
+tr {
+    height: 55px;
+}
+
+
+button {
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.add {
+    background: #27ae60;
+    color: white;
+}
+
+.minus {
+    background: #e74c3c;
+    color: white;
+}
+
+/* STATUS */
+.status {
+    padding: 5px 10px;
+    border-radius: 20px;
+    color: white;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+.status.on {
+    background: #27ae60;
+}
+
+.status.off {
+    background: #e74c3c;
+}
+
+.actions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+
+/* 📱 MOBILE */
+@media (max-width: 600px) {
+    th:nth-child(2),
+    td:nth-child(2) {
+        display: none;
+    }
+}
